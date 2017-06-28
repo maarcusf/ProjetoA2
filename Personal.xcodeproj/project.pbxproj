@@ -15,6 +15,7 @@
 		2064A3181F03DC8C00C40479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2064A3161F03DC8C00C40479 /* LaunchScreen.storyboard */; };
 		2064A3201F03E21000C40479 /* Aluno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064A31F1F03E21000C40479 /* Aluno.swift */; };
 		2064A3221F03E22500C40479 /* Historico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064A3211F03E22500C40479 /* Historico.swift */; };
+		7B185FC81F045E53006E972A /* UsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B185FC71F045E53006E972A /* UsuarioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2064A3191F03DC8C00C40479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2064A31F1F03E21000C40479 /* Aluno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aluno.swift; sourceTree = "<group>"; };
 		2064A3211F03E22500C40479 /* Historico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Historico.swift; sourceTree = "<group>"; };
+		7B185FC71F045E53006E972A /* UsuarioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsuarioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				2064A3161F03DC8C00C40479 /* LaunchScreen.storyboard */,
 				2064A3191F03DC8C00C40479 /* Info.plist */,
 				2064A3111F03DC8C00C40479 /* Personal.xcdatamodeld */,
+				7B185FC71F045E53006E972A /* UsuarioViewController.swift */,
 			);
 			path = Personal;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				2064A3201F03E21000C40479 /* Aluno.swift in Sources */,
 				2064A30D1F03DC8C00C40479 /* ViewController.swift in Sources */,
 				2064A30B1F03DC8C00C40479 /* AppDelegate.swift in Sources */,
+				7B185FC81F045E53006E972A /* UsuarioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

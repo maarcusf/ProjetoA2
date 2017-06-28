@@ -13,16 +13,17 @@ import CoreData
 
 class Historico: NSManagedObject
 {
-    @NSManaged var data:Date
-    @NSManaged var peso:Float
-    @NSManaged var idhistorico:Int32
+    @NSManaged var datamedida:String
+    @NSManaged var peso:String
+    
+    
     @NSManaged var alunos:Set<Aluno>
     
-    class func save(moc:NSManagedObjectContext, data:Date, peso:Float, idhistorico:Int32, alunos:Array<Aluno>)->Historico?
+    class func save(moc:NSManagedObjectContext, datamedida:String, peso:String, alunos:Array<Aluno>)->Historico?
     {
         if let novoHistorico = NSEntityDescription.insertNewObject(forEntityName: "Historico", into: moc) as? Historico
         {
-            novoHistorico.data = data
+            novoHistorico.datamedida = datamedida
             novoHistorico.peso = peso
             novoHistorico.alunos = Set<Aluno>(alunos)
             
@@ -33,7 +34,7 @@ class Historico: NSManagedObject
     
     override var hashValue: Int
     {
-        return idhistorico.hashValue
+        return peso.hashValue
     }
 }
 

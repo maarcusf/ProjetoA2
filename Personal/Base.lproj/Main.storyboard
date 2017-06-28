@@ -48,27 +48,35 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Yq-j5-89V">
-                                <rect key="frame" x="8" y="105" width="304" height="30"/>
+                                <rect key="frame" x="8" y="110" width="304" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsD-9C-BbZ">
-                                <rect key="frame" x="65" y="143" width="190" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Idade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tZi-VZ-8xN">
+                                <rect key="frame" x="8" y="148" width="139" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="+ Universidade"/>
-                                <connections>
-                                    <action selector="adicionaUniversidade:" destination="qEi-Fc-GbN" eventType="touchUpInside" id="Geu-7r-mWF"/>
-                                </connections>
-                            </button>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Altura" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hk7-ks-7bq">
+                                <rect key="frame" x="172" y="148" width="140" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gUC-H8-0N4">
-                                <rect key="frame" x="0.0" y="196" width="320" height="372"/>
+                                <rect key="frame" x="0.0" y="231" width="320" height="337"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celula_professor" textLabel="VAy-sC-KUF" detailTextLabel="h5T-DT-DRZ" style="IBUITableViewCellStyleValue1" id="MBd-cL-p75">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="celula_aluno" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celula_professor" textLabel="VAy-sC-KUF" detailTextLabel="h5T-DT-DRZ" style="IBUITableViewCellStyleValue1" id="MBd-cL-p75" userLabel="celula_aluno">
                                         <rect key="frame" x="0.0" y="28" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MBd-cL-p75" id="LSy-Nu-TmW">
@@ -98,20 +106,30 @@
                                     <outlet property="delegate" destination="qEi-Fc-GbN" id="vfu-1a-e17"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsD-9C-BbZ">
+                                <rect key="frame" x="65" y="198" width="190" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Novo Peso"/>
+                                <connections>
+                                    <action selector="adicionarHistorico:" destination="qEi-Fc-GbN" eventType="touchUpInside" id="4pZ-pG-2qL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="vrCampoMatricula" destination="pGw-gM-W2K" id="bmF-lE-YBr"/>
-                        <outlet property="vrCampoNome" destination="7Yq-j5-89V" id="f1e-pC-yvv"/>
-                        <outlet property="vrTableView" destination="gUC-H8-0N4" id="fvP-wU-smx"/>
+                        <outlet property="vrAltura" destination="Hk7-ks-7bq" id="cYz-e0-ccw"/>
+                        <outlet property="vrCampoMatricula" destination="pGw-gM-W2K" id="V8v-Le-ls2"/>
+                        <outlet property="vrCampoNome" destination="7Yq-j5-89V" id="moz-Ae-1zi"/>
+                        <outlet property="vrIdade" destination="tZi-VZ-8xN" id="t51-7x-fM8"/>
+                        <outlet property="vrTableView" destination="gUC-H8-0N4" id="q4Z-Ar-jRQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Pj-ON-29u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="407" y="212"/>
+            <point key="canvasLocation" x="406.875" y="211.26760563380282"/>
         </scene>
-        <!--Title-->
+        <!--View Controller-->
         <scene sceneID="uAg-K6-L8A">
             <objects>
                 <viewController id="s5O-97-BPP" customClass="ViewController" customModule="Personal" customModuleProvider="target" sceneMemberID="viewController">
@@ -123,7 +141,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hKU-XD-YLD">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hKU-XD-YLD">
                                 <rect key="frame" x="0.0" y="72" width="320" height="496"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -151,6 +169,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="qEi-Fc-GbN" kind="show" identifier="ver_usuario" id="iYv-zR-Upv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -158,11 +179,15 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="3X7-ox-P4g">
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="kz4-2i-hn6"/>
+                    <navigationItem key="navigationItem" id="3X7-ox-P4g">
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="kz4-2i-hn6">
+                            <connections>
+                                <segue destination="qEi-Fc-GbN" kind="show" id="tyR-YT-sDr"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="vrTableView" destination="hKU-XD-YLD" id="8fG-ER-OQq"/>
+                        <outlet property="vrTableView" destination="hKU-XD-YLD" id="Ce1-b9-xnb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uZ2-sf-zDF" sceneMemberID="firstResponder"/>
@@ -170,4 +195,7 @@
             <point key="canvasLocation" x="-433" y="212"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="tyR-YT-sDr"/>
+    </inferredMetricsTieBreakers>
 </document>
